@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.5s ease;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .mood-buttons button {
+    margin: 10px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .mood-buttons button:hover {
+    transform: scale(1.1);
+  }
+  
+  .mood-display {
+    margin-top: 40px;
+  }
+  
+  #emoji {
+    font-size: 80px;
+    margin-bottom: 15px;
+    animation: popIn 0.5s ease;
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  #message {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
